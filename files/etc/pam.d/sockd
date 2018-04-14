@@ -1,0 +1,2 @@
+auth required pam_pwdfile.so pwdfile=/etc/dante/pwdfile
+account required pam_permit.so

@@ -1,0 +1,13 @@
+[Unit]
+Description=Dante socks5 proxy server
+After=syslog.target network.target
+
+[Service]
+User=root
+; WorkingDirectory=/usr
+ExecStart=/usr/sbin/sockd -f /etc/dante/danted.conf
+Restart=always
+RestartSec=180
+
+[Install]
+WantedBy=multi-user.target
