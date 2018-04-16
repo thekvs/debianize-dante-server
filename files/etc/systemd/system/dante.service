@@ -4,10 +4,9 @@ After=syslog.target network.target
 
 [Service]
 User=root
-; WorkingDirectory=/usr
 ExecStart=/usr/sbin/sockd -f /etc/dante/danted.conf
-Restart=always
-RestartSec=180
+Restart=on-failure
+RestartSec=15
 
 [Install]
 WantedBy=multi-user.target
