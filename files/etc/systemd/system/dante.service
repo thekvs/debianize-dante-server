@@ -4,7 +4,7 @@ After=syslog.target network.target
 
 [Service]
 User=root
-ExecStart=/usr/sbin/sockd -f /etc/dante/danted.conf
+ExecStart=/usr/sbin/sockd -f /etc/dante/sockd.conf
 Restart=on-failure
 RestartSec=15
 
