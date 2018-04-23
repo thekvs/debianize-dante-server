@@ -39,7 +39,6 @@ deb: build
 		--deb-systemd files/etc/systemd/system/dante.service \
 		--maintainer "Konstantin Sorokin <kvs@sigterm.ru>" \
 		--url https://www.inet.no/dante/index.html \
-		--depends libpam-pwdfile \
 		--depends libc6 \
 		--depends libpam0g \
 		-C $(INSTALLDIR)
