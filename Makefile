@@ -16,6 +16,10 @@ check_env:
 		echo ERROR: libpam0g-dev package is not installed!; \
 		exit 1; \
 	fi
+	if ! which fpm; then \
+		echo ERROR: fpm is not installed!; \
+		exit 1; \
+	fi
 
 build: check_env
 	cd $(TMPDIR) && \
