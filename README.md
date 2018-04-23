@@ -11,4 +11,6 @@ You need following packages installed:
 
 ## Usage
 
-To generate password hashes use `mkpasswd -m sha-512` command. `mkpasswd` is part of the `whois` package. You will also need `libpam-pwdfile` package.
+We use non-standard 8383 port, so if you want to use standard SOCKS5 proxy port (1080) you have to edit configuration file which is located at `/etc/dante/sockd.conf`.
+
+To generate password hashes use `mkpasswd -m sha-512` command. `mkpasswd` utility is part of the `whois` package. You will also need `libpam-pwdfile` package.
