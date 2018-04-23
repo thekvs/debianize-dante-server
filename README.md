@@ -7,7 +7,7 @@ Build debianized [Dante](https://www.inet.no/dante/index.html) SOCKS proxy serve
 You need following packages installed:
 
 1. `libpam0g-dev`, can be installed via `sudo apt install libpam0g-dev`.
-1. `fpm`, for installation instructions see [GitHub](https://github.com/jordansissel/fpm/releases).
+1. `fpm`, for installation instructions see [GitHub](https://github.com/jordansissel/fpm).
 
 ## Usage
 
