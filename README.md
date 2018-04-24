@@ -9,8 +9,10 @@ You need following packages installed:
 1. `libpam0g-dev`, can be installed via `sudo apt install libpam0g-dev`.
 1. `fpm`, for installation instructions see [GitHub](https://github.com/jordansissel/fpm).
 
+To create deb package just run `make` command in the root of this repository.
+
 ## Usage
 
-We use non-standard 8383 port, so if you want to use standard SOCKS5 proxy port (1080) you have to edit configuration file which is located at `/etc/dante/sockd.conf`.
-
-To generate password hashes use `mkpasswd -m sha-512` command. `mkpasswd` utility is part of the `whois` package. You will also need `libpam-pwdfile` package.
+1. Install `libpam-pwdfile` package: `sudo apt install libpam-pwdfile`.
+1. Install `whois` package (for `mkpasswd` utility): `sudo apt install whois`.
+1. Use `mkpasswd -m sha-512` command to generate password hashes.
