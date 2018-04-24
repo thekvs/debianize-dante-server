@@ -20,6 +20,14 @@ check_env:
 		echo ERROR: fpm is not installed!; \
 		exit 1; \
 	fi
+	if ! which wget; then \
+		echo ERROR: wget is not installed!; \
+		exit 1; \
+	fi
+	if ! which tar; then \
+		echo ERROR: tar is not installed!; \
+		exit 1; \
+	fi
 
 build: check_env
 	cd $(TMPDIR) && \
