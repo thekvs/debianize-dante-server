@@ -15,4 +15,4 @@ To create deb package just run `make` command in the root of this repository.
 
 1. Install `libpam-pwdfile` package: `sudo apt install libpam-pwdfile`.
 1. Install `whois` package (for `mkpasswd` utility): `sudo apt install whois`.
-1. Use `mkpasswd -m sha-512` command to generate password hashes.
+1. Add users to `/etc/dante/pwdfile` file, format is `user:hash` per line. Use `mkpasswd -m sha-512` command to generate password's hash.
